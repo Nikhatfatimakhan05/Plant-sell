@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce_Website_DBMS
+    </title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        /* Basic CSS styles for the navbar */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .nav-link {
+            color: white;
+        }
+
+        .nav-link:hover {
+
+            color: yellow;
+            text-decoration: underline;
+            transition-duration: 1s;
+        }
+
+
+        .nav-link {
+            text-decoration: none;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 0;
+            /* 150px; */
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 10px 14px;
+            z-index: 1;
+        }
+
+        span {
+            color: white;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Media query for small screens */
+        @media only screen and (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .navbar-search {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:green">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: white;">NATAVU</a>
+            <button style="color:white" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span style="color:white; padding: 6%;" class="navbar-toggler-icon"><i class="fa fa-bars" style="align-items: center;"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div style="margin-left: 30%;">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="category.html"  id="navbarDropdown" 
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="category.html#homedecor">Home Decor</a></li>
+                                <li><a class="dropdown-item" href="category.html#garden">Garden Decor</a></li>
+                                <li><a class="dropdown-item" href="category.html#flower">Flowering Plants</a></li>
+                                <li><a class="dropdown-item" href="category.html#indoor">Indoor Plants</a></li>
+                                <li><a class="dropdown-item" href="category.html#bonsai">Bonsai Plants</a></li>
+                                <li><a class="dropdown-item" href="category.html#medicine">Medicinal Plants</a></li>
+                              
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link active" href="cart.html" >
+                            <i class="far fa-shopping-bag"></i></a></li>
+                    </ul>
+                </div>
+                <div style="margin-left: 12%;">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit" style="border: 2px solid white;"> <i
+                                class="fas fa-search" style="color:white"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+        <section>
+            <!-- <div id="section" > class="carousel slide carousel-fade" data-bs-ride="carousel"> -->
+            <div class="section1">
+                <div class="img-slider">
+                    <div>
+                        <img src="https://www.fnp.com/images/pr/l/v20211027140613/jade-plant-terrarium-in-glass-vase_1.jpg"
+                            alt="...">
+                    </div>
+                    <div>
+                        <img src="https://www.fnp.com/images/pr/l/v20211111054758/jade-plant-in-gold-tone-metal-pot_1.jpg"
+                            alt="...">
+                    </div>
+                    <div>
+                        <img src="https://www.fnp.com/images/pr/l/v20221013141136/philodendron-plant-green-floral-print-pot_1.jpg"
+                            alt="...">
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </section>
+
+
+
+
+
+        </section>
+        <section ID="hero">
+            <h2>Delivering Plants</h2>
+            <h3>Delivering Happiness</h3>
+
+            <button><a href="category.html" style="text-decoration: none; color:black ;">Shop now</a> </button>
+
+
+        </section>
+        <section class="row">
+            <div class="video-container">
+                <video src="Pexel.mp4" loop autoplay muted></video>
+
+            </div>
+
+
+            <section id="feature" class="section-p1">
+                <div class="fe-box">
+                    <img src="https://cdn-icons-png.flaticon.com/128/9337/9337648.png" alt="">
+                    <h6> Free Shipping</h6>
+                </div>
+
+                <div class="fe-box">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3208/3208028.png" alt="">
+                    <h6>Online Order</h6>
+                </div>
+
+                <div class="fe-box">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3135/3135706.png" alt="">
+                    <h6> Save Money</h6>
+                </div>
+
+                <div class="fe-box">
+                    <img src="https://cdn-icons-png.flaticon.com/128/4230/4230914.png" alt="">
+                    <h6> f24/7 Support</h6>
+                </div>
+
+            </section>
+
+            <section id="product1" class="section-p1">
+                <h2>
+                    Featured Plants
+                </h2>
+                <div class="section2">
+                    <div class="container">
+                        <div class="items">
+                            <div class="img img1">
+                                <img src="https://www.plantsguru.com/image/cache/location/indoor-plants-400x400.jpg"
+                                    alt="" />
+                            </div>
+                            <div class="name">Indoor Plants</div>
+
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+
+                            </div>
+                            <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+
+                        <div class="items">
+                            <div class="img img2">
+                                <img src="https://www.plantsguru.com/image/cache/location/medicinal-plants-400x400.jpg"
+                                    alt="" />
+                            </div>
+                            <div class="name">Medicinal Plants</div>
+
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+
+                            </div>
+                            <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+
+                        <div class="items">
+                            <div class="img img3">
+                                <img src="https://www.plantsguru.com/image/cache/category/bonsai-400x400.jpg" alt="" />
+                            </div>
+                            <div class="name">Bonsai Plants</div>
+
+
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+
+                            </div>
+                            <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+
+
+                        <div class="items">
+                            <div class="img img1">
+                                <img src="https://www.plantsguru.com/image/cache/category/fruit-plants-400x400.jpg"
+                                    alt="" />
+                            </div>
+                            <div class="name">Flowering Plants</div>
+
+
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+
+                            </div>
+                            <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+                        <div class="items">
+                            <div class="img img1">
+                                <img src="https://www.plantsguru.com/image/cache/catalog/category/fairy-house-400x400.jpg"
+                                    alt="" />
+                            </div>
+                            <div class="name">Garden Decor</div>
+
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+
+                            </div>
+                            <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+
+                        <div class="items">
+                            <div class="img img1">
+                                <img src="https://m.media-amazon.com/images/I/81eCQYj3-TL._AC_UL600_FMwebp_QL65_.jpg"
+                                    alt="" />
+                            </div>
+                            <div class="name">Home Decor</div>
+
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+
+                            </div>
+                            <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+
+
+
+                    </div>
+                </div>
+    </div>
+    </section>
+    </div>
+    <footer>
+        <div class="footer0">
+            <h1>NATAVU</h1>
+        </div>
+        <div class="footer1">
+            Connect with us at
+            <div class="social-media">
+                <a href="#"> <ion-icon name="logo-facebook"></ion-icon> </a>
+                <a href="#"> <ion-icon name="logo-linkedin"></ion-icon> </a>
+                <a href="#"> <ion-icon name="logo-youtube"></ion-icon> </a>
+                <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="#"> <ion-icon name="logo-twitter"></ion-icon> </a>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="product">
+                <div class="heading">Products</div>
+                <div class="div">Sell your Products</div>
+                <div class="div">Advertise</div>
+                <div class="div">Pricing</div>
+                <div class="div">Product Buisness</div>
+            </div>
+            <div class="services">
+                <div class="heading">Services</div>
+                <div class="div">Return</div>
+                <div class="div">Cash Back</div>
+                <div class="div">Others</div>
+            </div>
+
+            <div class="Get Help">
+                <div class="heading">Get Help</div>
+                <div class="div">Terms</div>
+                <div class="div">Login</div>
+            </div>
+        </div>
+        <div class="footer3">
+            Copyright ©
+            <h4>NATAVU</h4>
+            2022-2025
+        </div>
+    </footer>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showmenu() {
+            navLinks.style.right = "0";
+        }
+        function hidemenu() {
+            navLinks.style.right = "-200px";
+        } 
+    </script>
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

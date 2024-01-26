@@ -1,0 +1,344 @@
+<html>
+<head>
+	<meta name="viewport" content="with=device-width,
+	initial-scale=1.0">
+	<title>1st Web-Page</title>
+	<!-- <link rel="stylesheet" href="style.css"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="style.css" />
+
+<link
+href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+rel="stylesheet"
+/>
+   
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<style>
+	.nav-link {
+		color: white;
+	  }
+	  .nav-link:hover {
+	  
+		color:yellow
+		
+	  }
+	  .nav-link {
+		  text-decoration: none;
+	  }
+	  
+.blog{
+	width:80%;
+	margin:auto;
+	padding:80px;
+	text-align:center;
+	column-gap: 100px;
+	
+}
+.blog-col{
+	width:47%;
+	flex-basis:47%;
+	margin-right: 10px;
+	margin-bottom:5%;
+	text-align:left;
+	border:10px solid white;
+	border-radius:10px;
+	background:#fff3f3;
+	padding:5%;
+	cursor:pointer;
+	display:flex;
+
+}
+.blog-col img{
+	height:45px;
+	margin-left:10px;
+	margin-right:25px;
+	border-radius:50%;	
+
+}
+h1 {
+	color: white;
+}
+.blog-col p{
+	padding: 0;
+}
+.blog-col h3{
+	margin-top:15px;
+	text-align:left; 
+}
+@media(max-width:700px){
+	.blog-col img{
+	margin-left:0;
+	margin-right:15;	
+}
+}
+
+@media(max-width:700px){
+.cta{
+	margin:60px;
+	padding:30px;
+}
+	.cta h1{
+	font-size:18px;
+}
+.cta a{
+	font-size:16px;
+}
+.sub-header h1{
+	font-size:20px;
+}
+}
+
+.footer{
+	width:100%;
+	text-align:center;
+	padding:30px 0;
+}
+.footer h4{
+	margin-bottom:25px;
+	margin-top:20px;
+	font-weight:600;
+}
+.icons .fa{
+	color:#0000FF;
+	margin:0 13px;
+	cursor:pointer;
+	padding:18px 0;
+}
+.sub-header{
+	height:5vh;
+	width:100%;
+	background-image:linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(background.jpeg);
+	background-position:center;
+	background-size:cover;
+	text-align:center;
+	color:white;
+}
+.sub-header h1{
+	margin-top:100px;
+}
+.about-us{
+	width:80%;
+	margin:auto;
+	padding-top:80px;
+	padding-bottom:50px;
+}
+.about-col{
+	flex-basis:48%;
+	padding:30px 2px;
+}
+.about-col img{
+	width:100%;
+}
+.about-col h1{
+	padding-top:0;
+}
+.about-col p{
+	padding:15px 0 25px;
+}
+.red-btn{
+	border:1px solid #f44336;
+	background:transparent;
+	color:#f44336;
+}
+.red-btn:hover{
+	color:white;
+}
+.comment-box{
+	width:60%;
+	align:center;
+	border:1px solid #ccc;
+	margin:50px 45px;
+	padding:10px 20px;
+	padding-right:20px;
+}
+.comment-box h3{
+	text-align:left;
+}
+.comment-form input, .comment-form textarea{
+	width:100%;
+	padding:10px;
+	margin:15px 0;
+	box-sizing:border-box;
+	border:none;
+	outline:none;
+	background:#f0f0f0;
+}
+.comment-form button{
+	margin:10px 0;
+}
+.C p{
+	text-transform:none;
+	font-size:15px;
+	text-align:center;
+	margin:30px;
+}
+
+
+.aboutContainer {
+
+	width: 100vw;
+	height: 100vh;
+	
+}
+
+.aboutContainer::before {
+	content: '';
+	background: url('aboutBackground.jpg') 
+		no-repeat center center/cover;
+	position: absolute;
+	opacity: 0.8;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+}
+
+</style>
+</head>
+<body>
+	<section class="sub-header">
+
+	<nav class="navbar navbar-expand-lg " style="background-color:green">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="#" style="color: white;">NATAVU</a>
+		  <button style="color:white" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span style="color:white" class="navbar-toggler-icon"></span>
+		  </button>
+		  
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<div style="margin-left: 30%;">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+			  </li>
+		  
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="category.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				  Category
+				</a>
+				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<li><a class="dropdown-item" href="category.html#homedecor">Home Decor</a></li>
+					<li><a class="dropdown-item" href="category.html#garden">Garden Decor</a></li>
+					<li><a class="dropdown-item" href="category.html#flower">Flowering Plants</a></li>
+					<li><a class="dropdown-item" href="category.html#indoor">Indoor Plants</a></li>
+					<li><a class="dropdown-item" href="category.html#bonsai">Bonsai Plants</a></li>
+					<li><a class="dropdown-item" href="category.html#medicine">Medicinal Plants</a></li>
+				  
+				</ul>
+			  </li>
+			 
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link active" href="cart.html">
+				<i class="far fa-shopping-bag"></i></a></li>
+			</ul>
+		  </div>
+		  <div style="margin-left: 12%;">
+			<form class="d-flex">
+			  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+			  <button class="btn btn-outline-success" type="submit" style="border: 2px solid white;"> <i class="fas fa-search" style="color:white"></i></button>
+			</form>
+			</div>
+		  </div>
+		</div>
+	  </nav>
+	</section>
+	<div class="aboutContainer">
+    <section class="blog">
+	<h1>Contributors</h1>
+	<div class="row">
+	
+	<div class="blog-col">
+	<img src="imagelogo.jpg">
+	<div>
+	<p>I am <I>Nikhat Fatima Khan</I>, 2 <sup>nd</sup> year student of Medi-Caps University, currently pursuing Bachelor of Technology  in Information Technology. <br>
+		This is our project of DBMS for the session 2022-2023 of 4<sup>th</sup> sem.</p></p>
+	</div>
+	</div>
+	<div class="blog-col">
+		<img src="imagelogo.jpg">
+		<div>
+		<p>I am <I> Piyush Motwani</I>, 2 <sup>nd</sup> year student of Medi-Caps University, currently pursuing Bachelor of Technology in Information Technology. <br>
+		This is our project of DBMS for the session 2022-2023 of 4<sup>th</sup> sem.</p>
+	
+		</div>
+		</div>
+	</div>
+</section>
+</div>
+<footer>
+	<div class="footer0"><h1>NATAVU</h1></div>
+	<div class="footer1">
+		Connect with us at
+		<div class="social-media">
+			<a href="#"> <ion-icon name="logo-facebook"></ion-icon> </a>
+			<a href="#"> <ion-icon name="logo-linkedin"></ion-icon> </a>
+			<a href="#"> <ion-icon name="logo-youtube"></ion-icon> </a>
+			<a href="#">
+				<ion-icon name="logo-instagram"></ion-icon>
+			</a>
+			<a href="#"> <ion-icon name="logo-twitter"></ion-icon> </a>
+		</div>
+	</div>
+	<div class="footer2">
+		<div class="product">
+			<div class="heading">Products</div>
+			<div class="div">Sell your Products</div>
+			<div class="div">Advertise</div>
+			<div class="div">Pricing</div>
+			<div class="div">Product Buisness</div>
+		</div>
+		<div class="services">
+			<div class="heading">Services</div>
+			<div class="div">Return</div>
+			<div class="div">Cash Back</div>
+			<div class="div">Others</div>
+		</div>
+	  
+		<div class="Get Help">
+			<div class="heading">Get Help</div>
+			<div class="div">Terms</div>
+			<div class="div">Login</div>
+		</div>
+	</div>
+	<div class="footer3">
+		Copyright ©
+		<h4>NATAVU</h4>
+		2022-2025
+	</div>
+</footer>
+<!----------------Java Script for Toggle Menu-------->
+<script>
+	var navLinks=document.getElementById("navLinks");
+	function showmenu(){
+	navLinks.style.right="0";
+} 
+	function hidemenu(){
+	navLinks.style.right="-200px";
+} 
+
+</script>
+
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+	crossorigin="anonymous"></script>
+<script src="script.js"></script>
+       
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
